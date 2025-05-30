@@ -1,0 +1,35 @@
+# ========== IGNORA TODO ==========
+*
+
+# ========== PERMITE SOLO LO NECESARIO ==========
+
+# Permitir carpetas (¡importante!)
+!*/
+
+# Archivos fuente y documentación
+!*.cpp
+!*.h
+!README.md
+!.gitignore
+
+# ========== IGNORA CARPETAS DE IDES Y BUILD ==========
+
+# VS Code
+.vscode/
+
+# JetBrains IDEs (CLion, etc.)
+.idea/
+
+# Directorios de CMake/CLion
+cmake-build-*/
+build/
+bin/
+Debug/
+Release/
+
+# Archivos de configuración temporales
+*.iml
+*.user
+*.workspace
+*.sln
+*.vcxproj*
