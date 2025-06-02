@@ -1,35 +1,24 @@
-# ========== IGNORA TODO ==========
+# Ignora todo por defecto
 *
+**/*/
 
-# ========== PERMITE SOLO LO NECESARIO ==========
-
-# Permitir carpetas (¡importante!)
+# Permitir directorios
 !*/
 
-# Archivos fuente y documentación
+# Solo permitir archivos fuente importantes
 !*.cpp
 !*.h
-!README.md
-!.gitignore
+!*.hpp
+!*.cc
+!*.c
+!*.cxx
 
-# ========== IGNORA CARPETAS DE IDES Y BUILD ==========
+# Permitir archivos de documentación importantes
+!LICENSE
 
-# VS Code
-.vscode/
-
-# JetBrains IDEs (CLion, etc.)
-.idea/
-
-# Directorios de CMake/CLion
-cmake-build-*/
-build/
-bin/
-Debug/
-Release/
-
-# Archivos de configuración temporales
-*.iml
-*.user
-*.workspace
-*.sln
-*.vcxproj*
+# Ignorar específicamente archivos ocultos y temporales incluso si coinciden con patrones anteriores
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
